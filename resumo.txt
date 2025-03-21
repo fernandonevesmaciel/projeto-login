@@ -1,0 +1,69 @@
+--------------------------aula 2 ----------------------
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    verde: #49a09d
+    Lilás:#5f2c82
+*/
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+aqui estou definindo as funções gerais para fonte e zerando o padding e a margin, como o border-box estou definindo que o padding e a margin seja incluida no tamanho da pagina.
+
+body, html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+aqui estou definindo o tamanho da minha tela e a cor dela, usando 100vh quer dizer que nao importa a tela ela sempre ira ocupar o espaço todo
+
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+aqui estou dizendo que a posição do main vai ser relativa não importa o tamanho da tela, e defini sua altura e sua largura como falei a cima ocupando a tela toda.
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+   
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px, 0px, 10px rgba(0, 0, 0, 0.545)
+}
+
+aqui estou dizendo em position: absolute que a section vai ter um posisionamento absoluto que ela ira sempre parmanecer na mesma posição em relação a sua outra parte.
+top:50% e left 50 % estou definindo a section ao meio da pagina. 
+transform estou corrigindo ela para que ela esteja na posição correta;
+estou definindo tambem que o fundo da section seja branca, que seu tamanho seja de 250 de largura, e 250 de altura, sua borda seja arredonda em 20px, e que sua sombra seja um preto fraco meio transparente.
+
+
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagens/pexels-bruthethe-3035998\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+aqui estou definindo a imagem que irei colocar na tela que ela esteja em cima da section login e que ela tenha 200px de altura.
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
